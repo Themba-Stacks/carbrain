@@ -1,0 +1,22 @@
+{
+  "name": "brain",
+  "version": "1.0.0",
+  "description": "Remote control for car",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Themba-Stacks/carbrain.git"
+  },
+  "author": "Themba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Themba-Stacks/carbrain/issues"
+  },
+  "homepage": "https://github.com/Themba-Stacks/carbrain#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
