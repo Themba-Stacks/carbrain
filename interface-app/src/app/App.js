@@ -1,11 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
-import {Router} from '../services'
+import { Router } from '../services'
 import './App.css';
 
-function App() {
+export function App() {
   const root = process.env.REACT_APP_ROOT
   return (
-    <main className="App">
+    <main>
       <BrowserRouter basename={root}>
         <Router />
       </BrowserRouter>
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default App
