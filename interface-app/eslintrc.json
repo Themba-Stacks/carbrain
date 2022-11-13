@@ -1,0 +1,60 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "globals": {
+  },
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/recommended",
+    "plugin:tailwindcss/recommended"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "import", "tailwindcss"],
+  "rules": {
+    "import/namespace": ["error", { "allowComputed": true }],
+    "semi": ["error", "always"],
+    "arrow-body-style": ["error", "as-needed"],
+    "curly": ["error", "all"],
+    "space-before-function-paren": [
+      "error",
+      {
+        "anonymous": "never",
+        "named": "never",
+        "asyncArrow": "always"
+      }
+    ],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-unused-vars": "error",
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "react-hooks/exhaustive-deps": "off",
+    "react/display-name": "off",
+    "react/function-component-definition": [
+      "error",
+      { "namedComponents": "function-declaration", "unnamedComponents": "arrow-function" }
+    ],
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-boolean-value": "error",
+    "react/jsx-no-undef": "error",
+    "react/jsx-no-useless-fragment": "error",
+    "react/no-typos": "error",
+    "react/no-unused-prop-types": "error",
+    "react/self-closing-comp": ["error", { "component": true, "html": true }],
+    "react/sort-comp": "error",
+    "sort-imports": ["error", { "allowSeparatedGroups": true, "ignoreDeclarationSort": true }],
+    "spaced-comment": ["error", "always"],
+    "tailwindcss/classnames-order": "warn",
+    "tailwindcss/no-custom-classname": "off"
+  }
+}
