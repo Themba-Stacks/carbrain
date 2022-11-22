@@ -6,7 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors());
-app.get('/', (req, res, next) => res.send('Hello world!'));
+app.get('/', (req, res, next) => res.send('Hello worldie!'));
 
 const server = app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 const peerServer = ExpressPeerServer(server, { debug: true });
